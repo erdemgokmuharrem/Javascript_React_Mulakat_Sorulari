@@ -1,7 +1,6 @@
 # Javascript_React_Mulakat_Sorulari
 
-JS-React Mülakat Soruları.
-Selamlar ben erdem, girdiğim ve başka mülakatlardan duyduğum soruları tek bir dökümanda toplamaya,chatGPT ile cevaplandırmaya çalıştım herhangi bir sorunuz olursa dilediğiniz zaman yazabilirsiniz. discord : erdemthedev#4444 & discord.kamp.us
+Selamlar ben Erdem, girdiğim ve başka mülakatlardan duyduğum soruları tek bir dökümanda toplamaya,chatGPT ile cevaplandırmaya çalıştım herhangi bir sorunuz olursa dilediğiniz zaman yazabilirsiniz. discord:erdemthedev#4444 & [Kampus Discord](https://discord.kamp.us/)
 
 # 1.HTML dosyası içerisine js çağırma yöntemleri nelerdir ve nerede çağırmalıyız ?
 
