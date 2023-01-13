@@ -22,13 +22,13 @@ Semantik HTML etiketleri Sayfadaki içeriğin hangi bölümü önemli, hangi kı
 Javascript' de veri tutmak için kullandığımız javascript veri tiplerini 2 ayrı grupta ele alabiliriz. Basit Veri Tipleri: String, Number, Boolean ve undefined. Referans Tipler: Dizi, Nesne, Fonksiyon ve null veri tipleridir.
 
 	# 5.Reference ve Primitive type arasındaki farklar.
-Eğer bir metoda primitive type bir parametre gönderiyorsak bu değer kopyalanarak gider. Metodun içinde değer değiştirilse bile orijinal değerde bir değişiklik olmaz. Reference type bir veri herhangi bir metoda parametre geçildiğinde nesne reference olarak gönderilir.
-6. { }=== { } ne döner
+	Eğer bir metoda primitive type bir parametre gönderiyorsak bu değer kopyalanarak gider. Metodun içinde değer değiştirilse bile orijinal değerde bir değişiklik 		olmaz. Reference type bir veri herhangi bir metoda parametre geçildiğinde nesne reference olarak gönderilir.
+# 6. { }=== { } ne döner
 JavaScript'te, {} === {} karşılaştırması "false" dönecektir. Çünkü bu iki nesne farklı bellek adreslerinde yer alırlar ve JavaScript bu iki nesnenin farklı olmasını sonucu olarak "false" döner. Eğer nesnelerin içerikleri aynı ise bu karşılaştırma için Object.is() veya lodash gibi kütüphanelerin "isEqual" metodları kullanılabilir.
-7. { }== { } ne döner 
+# 7. { }== { } ne döner 
 Ayrıca eşitlik operatörü (==) birçok durumda veri tiplerini dönüştürdükten sonra karşılaştırma yaparken,(===) eşitlik operatörü veri tiplerini dönüştürmeden karşılaştırma yapar.
 
-8. Javascript ile dom elementlerine erişim methodları nelerdir ?
+# 8. Javascript ile dom elementlerine erişim methodları nelerdir ?
 JavaScript ile DOM (Document Object Model) elementlerine erişmek için birkaç farklı yol vardır. Bunlar arasında en yaygın olanlar:
 document.getElementById(): Bu metod, belirtilen id'ye sahip bir elementi döndürür. Örnek: var myElement = document.getElementById("myId");
 document.getElementsByTagName(): Bu metod, belirtilen etiket adına sahip tüm elementleri döndürür. Örnek: var listItems = document.getElementsByTagName("li");
@@ -36,7 +36,7 @@ document.querySelector(): Bu metod, belirtilen CSS sorgusuna uyan ilk elementi d
 document.querySelectorAll(): Bu metod, belirtilen CSS sorgusuna uyan tüm elementleri döndürür. Örnek: var listItems = document.querySelectorAll("li.active");
 element.getAttribute() : Bu metod, belirtilen özellik değerini döndürür. Örnek : var myAttribute = myElement.getAttribute("href");
 
-9.javascript hoisting kavramını açıklayın
+# 9.javascript hoisting kavramını açıklayın
 JavaScript içinde "hoisting" (yukseltme) kavramı, deklarasyonların çalışma zamanında yukarı taşınmasına denir. Bu, belirli bir kod bloğunda tanımlanan deklarasyonların, o kod bloğunun üst kısmına taşınmasına neden olur. Bu, deklarasyonların kod bloğunun herhangi bir yerinde kullanılabileceği anlamına gelir.
 Örneğin, aşağıdaki kod bloğunda, "x" değişkeni tanımlanmadan önce kullanılmıştır:
 console.log(x); // undefined var x = 5; 
@@ -46,16 +46,17 @@ Bu nedenle, bu kod bloğunda "x" değişkeni tanımlanmadan önce kullanılmış
 Ancak JavaScript sadece deklarasyonları yukarı taşır, atamaları taşımaz. Örneğin aşağıdaki kod bloğu hata verir:
 console.log(x); // ReferenceError: x is not defined let x = 5; 
 Bu nedenle, JavaScript'de hoisting sadece var ve function tipinde deklarasyonlar için geçerlidir.
-10. Local storage ve Session Storage Kavramlarını açıklayın
+# 10. Local storage ve Session Storage Kavramlarını açıklayın
 JavaScript içinde "Local Storage" ve "Session Storage" kavramları, web tarayıcıları tarafından sağlanan veri depolama mekanizmalarıdır. Bu mekanizmalar, web uygulamaları için kullanıcı tarafından girilen verileri veya uygulamanın tarafından oluşturulan verileri depolamak için kullanılır.
 "Local Storage": Bu mekanizma, verileri tarayıcının kapatılmasına kadar saklar. Bu, kullanıcının tarayıcıyı kapattıktan sonra bile uygulamanın verilerine erişebilmesini sağlar. Local Storage verileri depolamak için "localStorage" objesini kullanır. Örneğin, aşağıdaki kod bloğu "myData" adlı bir veriyi Local Storage'a kaydeder:
 Session Storage": Bu mekanizma, verileri tarayıcının kapatılmasına veya sekme kapatılmasına kadar saklar. Bu, kullanıcının tarayıcıyı veya sekmeyi kapattıktan sonra verilerin kaybolmasını sağlar. Session Storage verileri depolamak için "sessionStorage" objesini kullanır. Örneğin, aşağıdaki kod bloğu "myData" adlı bir veriyi Session Storage'a kaydeder:
-11. Local Storage’da hangi tür veri tutabiliriz.Eğer elimizdeki veri uygun değilse ne yapabiliriz ?
+
+	# 11. Local Storage’da hangi tür veri tutabiliriz.Eğer elimizdeki veri uygun değilse ne yapabiliriz ?
 Local Storage, web tarayıcıları tarafından sağlanan veri depolama mekanizmasıdır. Bu mekanizma, string veri tipinde verileri depolamak için kullanılır. Bu nedenle, Local Storage içinde sadece string veri tipinde verileri depolayabilirsiniz. Örneğin, sayılar, nesneler veya diziler gibi diğer veri tiplerini depolamak için dönüştürmeniz gerekir.
 Elimizdeki veri uygun değilse, verileri dönüştürebilir veya başka bir veri depolama mekanizması kullanabilirsiniz. Örneğin, JSON.stringify() metodunu kullanarak nesneleri veya dizileri string veri tipine dönüştürebilirsiniz.
 
-let myData = {name: "John", age: 25}; localStorage.setItem("myData", JSON.stringify(myData));
-12.Arrow Function nedir, sağladığı kolaylıklar nelerdir.
+	let myData = {name: "John", age: 25}; localStorage.setItem("myData", JSON.stringify(myData));
+# 12.Arrow Function nedir, sağladığı kolaylıklar nelerdir.
 JavaScript'te, "arrow function" (ok işaretli fonksiyon) bir fonksiyon tanımı şeklidir. Bu fonksiyonlar, daha kısa ve okunaklı kod yazmak için kullanılır. Arrow function'lar, function anahtar kelimesi yerine => operatorü kullanılarak tanımlanır.
 Aşağıdaki örnekte, "myFunction" adlı bir fonksiyon tanımlanmıştır:
 function myFunction(a, b) { return a + b; } 
