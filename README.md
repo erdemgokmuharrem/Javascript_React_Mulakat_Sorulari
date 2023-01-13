@@ -63,10 +63,10 @@ Bu fonksiyonu arrow function ile yazmak için
 let myFunction = (a, b) => { return a + b; } 
 Arrow function'lar sağladığı kolaylıklar arasında:
 Kodun daha kısa ve okunaklı olmasıdır.
-Arrow function'lar, "this" anahtar kelimesinin çalışma zamanında tanımlanmasını sağlar.
-Arrow function'lar, "return" anahtar kelimesini atlayarak daha kısa kod yazmanıza olanak tanır.
-Arrow function'lar, closure'ların oluşmasını kolaylaştırır. Bu closure'lar yerel değişkenlere erişim sağlar.
-Arrow function'lar güncel bir javascript sürümünde kullanılması önerilir, çünkü eski javascript sürümlerinde çalışmayabilir.
+-Arrow function'lar, "this" anahtar kelimesinin çalışma zamanında tanımlanmasını sağlar.
+-Arrow function'lar, "return" anahtar kelimesini atlayarak daha kısa kod yazmanıza olanak tanır.
+-Arrow function'lar, closure'ların oluşmasını kolaylaştırır. Bu closure'lar yerel değişkenlere erişim sağlar.
+-Arrow function'lar güncel bir javascript sürümünde kullanılması önerilir, çünkü eski javascript sürümlerinde çalışmayabilir.
 Bu kolaylıklar ile arrow function'lar ile kod yazarken daha okunaklı, daha kısa ve daha mantıklı hale getirebilirsiniz.
 # 13. Higher order functionlar nedir,nerelerde kullanırız 
 JavaScript'te "higher-order function" (yüksek-seviye fonksiyon), bir fonksiyonun argüman olarak veya döndürdüğü değer olarak başka bir fonksiyonu kullanmasını ifade eder. Yüksek seviye fonksiyonlar, fonksiyonların parametre olarak veya döndürdüğü değer olarak fonksiyonları kullanmasını sağlar. Bu fonksiyonlar ile kodunuz daha esnek ve modüler hale getirilir.
@@ -75,25 +75,25 @@ Asenkron işlemler: Örneğin, bir promise'in sonucunu elde etmek için kullanı
 Recursion: Örneğin, kendini tekrarlamalı olarak çalışan fonksiyonlar yüksek seviye fonksiyonlar olarak kullanılabilir.
 
 # 14.Call Stack ,heap,stack,event loop,callback queue kavramlarını açıklayın.
-JavaScript'te, "call stack" (çağrı yığını) çalışan fonksiyonların veya işlemlerin yığınını ifade eder. JavaScript çalışırken, çalışan fonksiyonlar veya işlemler çağrı yığınına eklenir ve çalışması tamamlandığında çıkarılır. Bu, JavaScript'te çalışan işlemlerin geri izlenmesini ve hata ayıklama işlemlerini kolaylaştırırAynı zamanda, javascript'te recursion gibi yapılar kullanılırken çağrı yığını büyüyebilir. Recursive fonksiyonların her çağrısı çağrı yığınına eklenir ve işlem tamamlandığında çıkarılır. Bu nedenle, çok fazla recursion kullanımı çağrı yığını büyüdüğünden, "stack overflow" hatası oluşabilir.
+-JavaScript'te, "call stack" (çağrı yığını) çalışan fonksiyonların veya işlemlerin yığınını ifade eder. JavaScript çalışırken, çalışan fonksiyonlar veya işlemler çağrı yığınına eklenir ve çalışması tamamlandığında çıkarılır. Bu, JavaScript'te çalışan işlemlerin geri izlenmesini ve hata ayıklama işlemlerini kolaylaştırırAynı zamanda, javascript'te recursion gibi yapılar kullanılırken çağrı yığını büyüyebilir. Recursive fonksiyonların her çağrısı çağrı yığınına eklenir ve işlem tamamlandığında çıkarılır. Bu nedenle, çok fazla recursion kullanımı çağrı yığını büyüdüğünden, "stack overflow" hatası oluşabilir.
 Ayrıca, javascript'te "event loop" (etkinlik döngüsü) adı verilen bir mekanizma sayesinde, çağrı yığını büyümeden işlemlerin gerçekleştirilmesini sağlar. Bu mekanizma, işlemlerin gerçekleştirilmesini bekleyen işlemleri sıraya alır ve çağrı yığını boş olduğunda işlemleri gerçekleştirir. Bu sayede, çağrı yığını büyümeden uzun süreli veya yavaş işlemlerin gerçekleştirilmesi sağlanır.
 Sonuç olarak, call stack Javascript'te çalışan fonksiyonlar veya işlemlerin geri izlenmesini ve hata ayıklama işlemlerini kolaylaştıran bir mekanizmadır. Ayrıca, recursion veya uzun süreli işlemlerin gerçekleştirilmesi için etkinlik döngüsü mekanizmasının kullanılması gerekir.
-Heap: JavaScript programlama dillerinde, "Heap" (yığın) bellekte dinamik olarak alınan ve serbest bırakılan verileri depolayan bir alandır. Heap, veri yapılarının oluşturulduğu ve yönetildiği bir alandır. Örneğin, nesneler, diziler veya fonksiyonlar gibi veri yapıları heap bellekte depolanır.
-Stack: JavaScript programlama dillerinde, "Stack" (yığın) fonksiyon çağrılarının veya işlemlerin gerçekleştirildiği yerdir. Stack, LIFO (Son Giren İlk Çıkar) yapısına sahiptir ve her çağrı veya işlem, stack'e eklenir ve tamamlandığında çıkarılır.
-Event Loop: JavaScript programlama dillerinde, "Event Loop" (etkinlik döngüsü) çağrı yığını (stack) büyümeden işlemlerin gerçekleştirilmesini sağlar. Event loop, işlemlerin gerçekleştirilmesini bekleyen işlemleri sıraya alır ve çağrı yığını boş olduğunda işlemleri gerçekleştirir.
-Callback Queue: JavaScript programlama dillerinde, "Callback Queue" (geri çağırma kuyruğu) işlemlerin gerçekleştirilmesini bekleyen geri çağırma fonksiyonlarının sıralandığı yerdir. Callback queue, event loop tarafından kontrol edilir ve çağrı yığını (stack) boş olduğunda geri çağırma fonksiyonları gerçekleştirilir.
+-Heap: JavaScript programlama dillerinde, "Heap" (yığın) bellekte dinamik olarak alınan ve serbest bırakılan verileri depolayan bir alandır. Heap, veri yapılarının oluşturulduğu ve yönetildiği bir alandır. Örneğin, nesneler, diziler veya fonksiyonlar gibi veri yapıları heap bellekte depolanır.
+-Stack: JavaScript programlama dillerinde, "Stack" (yığın) fonksiyon çağrılarının veya işlemlerin gerçekleştirildiği yerdir. Stack, LIFO (Son Giren İlk Çıkar) yapısına sahiptir ve her çağrı veya işlem, stack'e eklenir ve tamamlandığında çıkarılır.
+-Event Loop: JavaScript programlama dillerinde, "Event Loop" (etkinlik döngüsü) çağrı yığını (stack) büyümeden işlemlerin gerçekleştirilmesini sağlar. Event loop, işlemlerin gerçekleştirilmesini bekleyen işlemleri sıraya alır ve çağrı yığını boş olduğunda işlemleri gerçekleştirir.
+-Callback Queue: JavaScript programlama dillerinde, "Callback Queue" (geri çağırma kuyruğu) işlemlerin gerçekleştirilmesini bekleyen geri çağırma fonksiyonlarının sıralandığı yerdir. Callback queue, event loop tarafından kontrol edilir ve çağrı yığını (stack) boş olduğunda geri çağırma fonksiyonları gerçekleştirilir.
 # 15.Data fetching yöntemleri nelerdir.
 JavaScript'te veri çekme yöntemleri arasında aşağıdakiler bulunur:
-XMLHttpRequest (XHR) : Eski bir veri çekme yöntemidir ve XmlHttpRequest nesnesi kullanılarak gerçekleştirilir. Bu nesne, tarayıcının arka ucunda veri çekmek için kullanılır ve AJAX istekleri gerçekleştirmek için kullanılır.
-Fetch API : Fetch API, XMLHttpRequest'in yerini alan modern bir veri çekme yöntemidir. Fetch API, JavaScript kodunuzda veri çekmek için kullanabileceğiniz bir dizi fonksiyon ve metodlar sunar.
-Axios : Axios, bir JavaScript kütüphanesidir ve Fetch API'nin yerini alan bir alternatif olarak kullanılabilir. Axios, daha kullanışlı ve kolay kullanılabilir bir arayüz sunar.
-jQuery : jQuery, JavaScript kütüphanesidir ve veri çekme işlemleri için kullanılabilir. jQuery, XMLHttpRequest veya Fetch API gibi alternatif yöntemlere göre daha kullanışlı ve kolay kullanılabilir bir arayüz sunar.
+-XMLHttpRequest (XHR) : Eski bir veri çekme yöntemidir ve XmlHttpRequest nesnesi kullanılarak gerçekleştirilir. Bu nesne, tarayıcının arka ucunda veri çekmek için kullanılır ve AJAX istekleri gerçekleştirmek için kullanılır.
+-Fetch API : Fetch API, XMLHttpRequest'in yerini alan modern bir veri çekme yöntemidir. Fetch API, JavaScript kodunuzda veri çekmek için kullanabileceğiniz bir dizi fonksiyon ve metodlar sunar.
+-Axios : Axios, bir JavaScript kütüphanesidir ve Fetch API'nin yerini alan bir alternatif olarak kullanılabilir. Axios, daha kullanışlı ve kolay kullanılabilir bir arayüz sunar.
+-jQuery : jQuery, JavaScript kütüphanesidir ve veri çekme işlemleri için kullanılabilir. jQuery, XMLHttpRequest veya Fetch API gibi alternatif yöntemlere göre daha kullanışlı ve kolay kullanılabilir bir arayüz sunar.
 # 16.Bir fonksiyonu düzenli aralıklarla çalıştırmamızı sağlayan fonksiyonun adı nedir ? 
 JavaScript'te bir fonksiyonu düzenli aralıklarla çalıştırmak için kullanabileceğiniz fonksiyon "setInterval()" dir. setInterval() fonksiyonu, belirtilen aralıkta belirtilen fonksiyonu tekrar tekrar çağırır. Örneğin, bir fonksiyonu her 5 saniyede bir çalıştırmak için setInterval() kullanabilirsiniz.
 
 # 17. Bir fonksiyonu belirli bir gecikmeden sonra çalıştırmamızı sağlayan fonksiyonun adı nedir ?
 JavaScript'te bir fonksiyonu belirli bir gecikmeden sonra çalıştırmak için kullanabileceğiniz fonksiyon "setTimeout()" dir. setTimeout() fonksiyonu, belirtilen zaman aralığı sonunda belirtilen fonksiyonu tek sefer çalıştırır. Örneğin, bir fonksiyonu 5 saniye sonra çalıştırmak için setTimeout() kullanabilirsiniz.
-# 18.Consturcor Nedir ? 
+# 18.Constructor Nedir ? 
 JavaScript'te, "constructor" (yapıcı) fonksiyonlar, nesnelerin oluşturulduğu ve özelliklerinin atandığı yerdir. Bir constructor fonksiyonu, bir nesne oluşturulduğunda çağrılır ve nesnenin özelliklerini ve davranışlarını tanımlar. Constructor fonksiyonları, class'lar veya prototype yapısı kullanılarak oluşturulduğunda kullanılır. 
 Örneğin, bir "Person" sınıfı oluşturalım ve yapıcı fonksiyonunu kullanalım:
 class Person { constructor(name, age) { this.name = name; this.age = age; } }
