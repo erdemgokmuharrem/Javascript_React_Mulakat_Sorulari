@@ -181,7 +181,7 @@ useMemo: Bu Hook, belirli bir değerin değişmeden önce hesaplanıp hesaplanma
 useCallback: Bu Hook, belirli bir fonksiyonun değişmeden önce oluşturulup oluşturulmayacağını kontrol eder. Eğer fonksiyon veya fonksiyonun bağımlılıkları değişmediyse, önceki fonksiyon kullanılır. Bu sayede, performansı arttırmak için fonksiyonların tekrar oluşturulması engellenir.
 Bu Hooklar sayesinde, React bileşenlerinin performansı arttırılır ve bileşenlerin yanıltıcı bir şekilde re-render edilmesi engellenir. Bu sayede, uygulamanın hızı ve verimliliği arttırılır.
 
-#31.State Menagement yöntemleri nelerdir ?
+# 31.State Menagement yöntemleri nelerdir ?
 React uygulamalarında state yönetimi, uygulamanın veri durumunun nasıl tutulacağını ve nasıl yönetileceğini belirler. State management yöntemleri arasında en yaygın olanlar şunlardır:
 - Local state: Her bileşenin kendi içinde yer alan state'i yönetir. Bu yöntem, uygulamanın küçük ve basit olması durumunda kullanılabilir. Ancak, uygulama büyüdükçe, state yönetimi zorlaşabilir.
 - Context API: React'in kendi içinde yer alan bir yöntemdir. Bu yöntem, state'i kapsayan bir context oluşturulur ve bileşenler bu context'e bağlanır. Bu sayede, state'i yönetmek isteyen bileşenler context'e erişebilir. Bu yöntem, uygulama boyutu büyüdükçe daha pratik hale gelir.
