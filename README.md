@@ -104,6 +104,7 @@ console.log(person1.name);
 console.log(person1.age);
  // 30 
 Bu örnekte, "Person" sınıfının yapıcı fonksiyonu, "name" ve "age" adlı iki özellik alır ve bunları nesnenin özellikleri olarak atar. Bu nesne oluşturulduğunda, yapıcı fonksiyon otomatik olarak çalışır ve nesnenin "name" ve "age" özellikleri atanır.
+
 # 19. Call,apply,bind kavramlarını açıklayınız
 call()" metodu, bir fonksiyonu çağırmak için kullanılır ve ilk parametre olarak "this" değişkeninin değerini, diğer parametreler ise fonksiyonun gerçek parametrelerini alır.
 apply()" metodu, "call()" metoduna benzer şekilde çalışır ancak fonksiyon parametrelerini dizi olarak alır.
@@ -132,13 +133,13 @@ React Hooks, fonksiyonel bileşenlerde state yönetimi veya lifecycle metodları
 Bu, React'in bileşenin ne zaman re-render edileceğini belirlemek için kullandığı bileşen içeriğinin değişip değişmediğini anlamasına yardımcı olur. Hooklar, bileşenin her render edildiğinde çağrılır ve bu, state veya props değişkenlerinin değiştiğinde bileşenin yeniden render edilmesini sağlar.
 Eğer Hookler componentin içinde yer alırsa, React hangi Hook'un ne zaman çalıştırılması gerektiğini belirleyemez ve bu da hata oluşmasına neden olabilir. Ayrıca, Hookların componentin en yukarısında çağrılması sayesinde, kodun okunaklılığı ve anlaşılırlığı arttırılmış olur.
 
-	# 25. Class component ve functional component arasındaki farklar nelerdir ?
+# 25. Class component ve functional component arasındaki farklar nelerdir ?
 React bileşenleri, fonksiyonel veya sınıf tabanlı olarak yazılabilir. Bu iki yöntem arasındaki farklar şunlardır:
 Fonksiyonel bileşenler: Fonksiyonel bileşenler, JavaScript fonksiyonları olarak yazılır ve props veya state değişkenlerini alabilirler. Fonksiyonel bileşenler, state yönetimi için useState() veya lifecycle metodları için useEffect() gibi React Hooks kullanabilirler. Fonksiyonel bileşenler, performans açısından daha avantajlıdır ve daha kolay okunur ve anlaşılır.
 Sınıf bileşenler: Sınıf bileşenler, ES6 sınıfları olarak yazılır ve this anahtar kelimesi ile state ve lifecycle metodlarına erişebilirler. Sınıf bileşenler, performans açısından daha yavaş olabilir ve daha karmakarışık olabilir.
 Sonuç olarak, iki yöntem arasında performans açısından fonksiyonal componentlar daha iyidir ancak sınıf tabanlı componentlar daha tanıdık olabileceğinden, yazarların tercihine göre her ikiside kullanılabilir.
 
-	# 26.React Lifecylce metodları nelerdir.
+# 26.React Lifecylce metodları nelerdir.
 React bileşenleri, bileşenin oluşturulduğu, güncellendiği veya silindiği zaman çağrılabilen lifecycle metodlarına sahiptir. Bu metodlar aracılığıyla bileşenin içeriği veya props/state değişkenleri güncellenebilir.React bileşenlerinin lifecycle metodları şunlardır:
 componentDidMount(): Bileşen oluşturulduğu ve ilk kez DOM'a eklendiği zaman çağrılır. Bu metod, bileşenin ilk görüntülenmesi için gerekli olan veri veya işlemleri yapmak için kullanılabilir.
 componentDidUpdate(): Bileşenin props veya state değişkenleri güncellendiği zaman çağrılır. Bu metod, bileşenin güncellenen verilerle yeniden render edilmesi için gerekli olan işlemleri yapmak için kullanılabilir.
@@ -150,11 +151,11 @@ Lifecycle metodları, sadece sınıf tabanlı componentlerde kullanılabilir.
 
 
 
-	# 27.Syntetic Events Nedir ?
+# 27.Syntetic Events Nedir ?
 Synthetic Events, React bileşenlerinde DOM etkileşimleri için kullanılan bir event sistemidir. Synthetic Events, aslında JavaScript tarafından yönetilen ve DOM eventleri ile aynı davranış gösteren, JavaScript tarafından oluşturulan eventlerdir.
 Bu sayede React bileşenleri, DOM eventleri ile aynı şekilde çalışır ve sadece JavaScript tarafından yönetilir. Bu sayede React, bileşenler arasındaki etkileşimleri ve eventleri daha kontrollü ve anlaşılır hale getirir. Aynı zamanda, Synthetic events ile browser farklılıklarının oluşmamasını ve kodun daha kolay test edilmesini sağlar.
 
-	# 28. Build almak ne anlama gelir, build işlemi esnasında neler olur.
+# 28. Build almak ne anlama gelir, build işlemi esnasında neler olur.
 "Build" işlemi, bir yazılım projesinin üretim veya dağıtım için hazır hale getirilmesi anlamına gelir. Bu işlem, kaynak kodların derlenmesi, bağımlılıkların eklenmesi, dosya boyutlarının azaltılması ve diğer işlemlerin gerçekleştirilmesi olarak tanımlanabilir.
 -Build işlemi esnasında genellikle şunlar gerçekleşir:
 -Kaynak kodlar derlenir, transpile edilir ve minify edilir
@@ -165,7 +166,7 @@ Bu sayede React bileşenleri, DOM eventleri ile aynı şekilde çalışır ve sa
 -Proje üretim veya test ortamına deploy edilir.
 Bu işlemlerin amacı, projeyi üretim veya dağıtım için hazır hale getirmektir. Bu sayede projede oluşan hatalar veya sorunlar önceden tespit edilir ve çözülür. Aynı zamanda proje daha hızlı ve daha az kaynak tüketen hale getirilir.
 
-	# 29.Webpack Nedir ?
+# 29.Webpack Nedir ?
 Webpack, JavaScript modül yükleyicisi ve paketleyicisidir. Bu araç, JavaScript, CSS, resim gibi dosyalarınızı modüller halinde tarayarak, bunları tek bir veya birden fazla dosyaya paketler. Bu sayede, tarayarak bulunan modülleri ve bağımlılıkları bir araya getirerek projenizin performansını arttırır.
 Webpack, sadece JavaScript dosyalarını değil aynı zamanda HTML, CSS gibi diğer dosya türlerini de işleyebilir. Webpack ile, sadece projede kullanılan modülleri ve bağımlılıkları yükler, böylece proje hızlı ve küçük olur. Ayrıca Webpack ile, sadece tarayıcılar için çalışan kodları üreterek, eski tarayıcılar için gereksiz kodları üretmezsiniz.
 
@@ -181,7 +182,7 @@ useMemo: Bu Hook, belirli bir değerin değişmeden önce hesaplanıp hesaplanma
 useCallback: Bu Hook, belirli bir fonksiyonun değişmeden önce oluşturulup oluşturulmayacağını kontrol eder. Eğer fonksiyon veya fonksiyonun bağımlılıkları değişmediyse, önceki fonksiyon kullanılır. Bu sayede, performansı arttırmak için fonksiyonların tekrar oluşturulması engellenir.
 Bu Hooklar sayesinde, React bileşenlerinin performansı arttırılır ve bileşenlerin yanıltıcı bir şekilde re-render edilmesi engellenir. Bu sayede, uygulamanın hızı ve verimliliği arttırılır.
 
-	#31.State Menagement yöntemleri nelerdir ?
+#31.State Menagement yöntemleri nelerdir ?
 React uygulamalarında state yönetimi, uygulamanın veri durumunun nasıl tutulacağını ve nasıl yönetileceğini belirler. State management yöntemleri arasında en yaygın olanlar şunlardır:
 Local state: Her bileşenin kendi içinde yer alan state'i yönetir. Bu yöntem, uygulamanın küçük ve basit olması durumunda kullanılabilir. Ancak, uygulama büyüdükçe, state yönetimi zorlaşabilir.
 Context API: React'in kendi içinde yer alan bir yöntemdir. Bu yöntem, state'i kapsayan bir context oluşturulur ve bileşenler bu context'e bağlanır. Bu sayede, state'i yönetmek isteyen bileşenler context'e erişebilir. Bu yöntem, uygulama boyutu büyüdükçe daha pratik hale gelir.
@@ -189,7 +190,7 @@ Redux: React uygulamaları için popüler bir state management kütüphanesidir.
 MobX: MobX, Redux ile benzer bir şekilde çalışır. Bu kütüphane de state'i tek bir noktada yönetir ve bileşenler bu state'e erişir. MobX, Redux'a göre daha az kurulum gerektirir ve kullanımı daha kolaydır.
 Bu yöntemler arasında kullanılacak olanı, uygulamanın boyutu, ihtiyaçları ve geliştiricinin tercihi gibi faktörlere göre seçilir.
 
-	# 32.Context API ve Redux Nedir,Farkları Nelerdir ?
+# 32.Context API ve Redux Nedir,Farkları Nelerdir ?
 Context API: React'in kendi içinde yer alan bir yöntemdir. Bu yöntem, state'i kapsayan bir context oluşturulur ve bileşenler bu context'e bağlanır. Bu sayede, state'i yönetmek isteyen bileşenler context'e erişebilir. Bu yöntem, uygulama boyutu büyüdükçe daha pratik hale gelir.
 Redux: React uygulamaları için popüler bir state management kütüphanesidir. Bu kütüphane, state'i tek bir noktada (store) yönetir ve bileşenler bu store'a erişir. Redux, state'i tek bir yerde yönetir ve bileşenlerin state'e erişimini kontrol eder. Ayrıca, state'in geçmişini kaydetme ve geri dönme özellikleri de sağlar.
 Context API, Redux'a göre daha az kurulum gerektirir ve kullanımı daha kolaydır. Ancak Redux daha esnek ve scalabilirdir ve kodun anlaşılmasını ve debuggability'i kolaylaştırır. Redux, özellikle uygulamanın büyüklüğü ve karmaşıklığı arttıkça daha yararlı olabilir.
@@ -197,7 +198,7 @@ Context API, Redux'a göre daha az kurulum gerektirir ve kullanımı daha kolayd
 
 
 
-	# 33. SSR,CSR,SSG kavramlarını açıklayın ?
+# 33. SSR,CSR,SSG kavramlarını açıklayın ?
 
 SSR (Server-Side Rendering): Bu yöntem, uygulamanın sunucuda render edilmesini sağlar. Bu sayede, tarayıcıda uygulama ilk yüklendiğinde hızlı bir şekilde gösterilir. SSR, SEO'yu arttırmak ve tarayıcıda ilk yüklenmenin hızını arttırmak için kullanılır.
 CSR (Client-Side Rendering): Bu yöntem, uygulamanın tarayıcıda render edilmesini sağlar. Bu sayede, tarayıcıda uygulama ilk yüklendiğinde yavaş bir şekilde gösterilir. Ancak, daha sonra uygulamanın hızı arttır.
