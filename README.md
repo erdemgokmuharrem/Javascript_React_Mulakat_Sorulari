@@ -3,23 +3,25 @@
 JS-React Mülakat Soruları.
 Selamlar ben erdem, girdiğim ve başka mülakatlardan duyduğum soruları tek bir dökümanda toplamaya,chatGPT ile cevaplandırmaya çalıştım herhangi bir sorunuz olursa dilediğiniz zaman yazabilirsiniz. discord : erdemthedev#4444 & discord.kamp.us
 
-1.HTML dosyası içerisine js çağırma yöntemleri nelerdir ve nerede çağırmalıyız ?
+# 1.HTML dosyası içerisine js çağırma yöntemleri nelerdir ve nerede çağırmalıyız ?
 
-Cevap: HTML kodumuzun içine head ve body arasına <script> tagi içinde de yazabiliriz ya da 
+HTML kodumuzun içine head ve body arasına <script> tagi içinde de yazabiliriz ya da 
 Dışarıdan oluşturduğumuz js dosyasını html kodumuzun içinde çağırırız.(script src)
-2.Semantic HTML nedir ?
+# 2.Semantic HTML nedir ?
 Semantik HTML etiketleri Sayfadaki içeriğin hangi bölümü önemli, hangi kısım tamamlayıcı dolayısıyla öncelikli değil, hangi alan navigasyon için gibi soruların cevaplarının arama motorlarına bildirilmesini sağlayan HTML5, Google ve Bing gibi büyük arama motorları için önemli semantik ipuçları sağlayabiliyor. Ayrıca HTML5, arama motorlarına anlamlı bilgi iletilmesinin yanı sıra multimedya kullanımını da kolaylaştırarak ekstra uzantılara ihtiyaç duymadan interaktif sayfalar hazırlamanıza olanak sağlıyor.
-3.Const — let — var farkları nelerdir ?
 
-VAR=>  ile tanımlanan değişkenler daha sonra değiştirilebilir.
+# 3.Const — let — var farkları nelerdir ?
+
+## VAR=>  ile tanımlanan değişkenler daha sonra değiştirilebilir.
 	Kodun herhangi bir yerinde kullanılabilir ve birden fazla kullanılabilir
 	Var ile tanımlanan değişlenler function scopetur yani fonksiyon içerisinde var kullanılarak tanımlanmış değişkenlere fonksiyon dışından erişilemez.
-LET = > ile tanımlanmış değişkenlere sadece tanımlandığı kapsamda ulaşılabilir yani block scope {}
-Süslü parantezin içerisidir , sonradan tekrar değiştirilebilir, aynı kapsam içerisinde sadece bir sefer tanımlanabilir tekrar tanımlanırsa kod hata verir.
-CONST => const ile tanımlanmış bir değişken let kullanımında olduğu gibi tanımlandığı kapsam (block scope) içerisinden erişilebilir ve bunun dışından erişimler sağlanmaz. const kelimesi aslında Constant yani Sabit anlamını taşımaktadır . Kullanıldığı kapsam içerisinde sabittir ve değiştirilemez .
-4. Javascriptte hangi veri tipleri kullanılır
+## LET = > ile tanımlanmış değişkenlere sadece tanımlandığı kapsamda ulaşılabilir yani block scope {}
+	Süslü parantezin içerisidir , sonradan tekrar değiştirilebilir, aynı kapsam içerisinde sadece bir sefer tanımlanabilir tekrar tanımlanırsa kod hata verir.
+## CONST => const ile tanımlanmış bir değişken let kullanımında olduğu gibi tanımlandığı kapsam (block scope) içerisinden erişilebilir ve bunun dışından erişimler 	sağlanmaz. const kelimesi aslında Constant yani Sabit anlamını taşımaktadır . Kullanıldığı kapsam içerisinde sabittir ve değiştirilemez .
+# 4. Javascriptte hangi veri tipleri kullanılır
 Javascript' de veri tutmak için kullandığımız javascript veri tiplerini 2 ayrı grupta ele alabiliriz. Basit Veri Tipleri: String, Number, Boolean ve undefined. Referans Tipler: Dizi, Nesne, Fonksiyon ve null veri tipleridir.
-5.Reference ve Primitive type arasındaki farklar.
+
+	# 5.Reference ve Primitive type arasındaki farklar.
 Eğer bir metoda primitive type bir parametre gönderiyorsak bu değer kopyalanarak gider. Metodun içinde değer değiştirilse bile orijinal değerde bir değişiklik olmaz. Reference type bir veri herhangi bir metoda parametre geçildiğinde nesne reference olarak gönderilir.
 6. { }=== { } ne döner
 JavaScript'te, {} === {} karşılaştırması "false" dönecektir. Çünkü bu iki nesne farklı bellek adreslerinde yer alırlar ve JavaScript bu iki nesnenin farklı olmasını sonucu olarak "false" döner. Eğer nesnelerin içerikleri aynı ise bu karşılaştırma için Object.is() veya lodash gibi kütüphanelerin "isEqual" metodları kullanılabilir.
