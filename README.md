@@ -63,10 +63,10 @@ Bu fonksiyonu arrow function ile yazmak için
 let myFunction = (a, b) => { return a + b; } 
 Arrow function'lar sağladığı kolaylıklar arasında:
 Kodun daha kısa ve okunaklı olmasıdır.
--Arrow function'lar, "this" anahtar kelimesinin çalışma zamanında tanımlanmasını sağlar.
--Arrow function'lar, "return" anahtar kelimesini atlayarak daha kısa kod yazmanıza olanak tanır.
--Arrow function'lar, closure'ların oluşmasını kolaylaştırır. Bu closure'lar yerel değişkenlere erişim sağlar.
--Arrow function'lar güncel bir javascript sürümünde kullanılması önerilir, çünkü eski javascript sürümlerinde çalışmayabilir.
+- Arrow function'lar, "this" anahtar kelimesinin çalışma zamanında tanımlanmasını sağlar.
+- Arrow function'lar, "return" anahtar kelimesini atlayarak daha kısa kod yazmanıza olanak tanır.
+- Arrow function'lar, closure'ların oluşmasını kolaylaştırır. Bu closure'lar yerel değişkenlere erişim sağlar.
+- Arrow function'lar güncel bir javascript sürümünde kullanılması önerilir, çünkü eski javascript sürümlerinde çalışmayabilir.
 Bu kolaylıklar ile arrow function'lar ile kod yazarken daha okunaklı, daha kısa ve daha mantıklı hale getirebilirsiniz.
 # 13. Higher order functionlar nedir,nerelerde kullanırız 
 JavaScript'te "higher-order function" (yüksek-seviye fonksiyon), bir fonksiyonun argüman olarak veya döndürdüğü değer olarak başka bir fonksiyonu kullanmasını ifade eder. Yüksek seviye fonksiyonlar, fonksiyonların parametre olarak veya döndürdüğü değer olarak fonksiyonları kullanmasını sağlar. Bu fonksiyonlar ile kodunuz daha esnek ve modüler hale getirilir.
@@ -75,19 +75,19 @@ Asenkron işlemler: Örneğin, bir promise'in sonucunu elde etmek için kullanı
 Recursion: Örneğin, kendini tekrarlamalı olarak çalışan fonksiyonlar yüksek seviye fonksiyonlar olarak kullanılabilir.
 
 # 14.Call Stack ,heap,stack,event loop,callback queue kavramlarını açıklayın.
--JavaScript'te, "call stack" (çağrı yığını) çalışan fonksiyonların veya işlemlerin yığınını ifade eder. JavaScript çalışırken, çalışan fonksiyonlar veya işlemler çağrı yığınına eklenir ve çalışması tamamlandığında çıkarılır. Bu, JavaScript'te çalışan işlemlerin geri izlenmesini ve hata ayıklama işlemlerini kolaylaştırırAynı zamanda, javascript'te recursion gibi yapılar kullanılırken çağrı yığını büyüyebilir. Recursive fonksiyonların her çağrısı çağrı yığınına eklenir ve işlem tamamlandığında çıkarılır. Bu nedenle, çok fazla recursion kullanımı çağrı yığını büyüdüğünden, "stack overflow" hatası oluşabilir.
+- JavaScript'te, "call stack" (çağrı yığını) çalışan fonksiyonların veya işlemlerin yığınını ifade eder. JavaScript çalışırken, çalışan fonksiyonlar veya işlemler çağrı yığınına eklenir ve çalışması tamamlandığında çıkarılır. Bu, JavaScript'te çalışan işlemlerin geri izlenmesini ve hata ayıklama işlemlerini kolaylaştırırAynı zamanda, javascript'te recursion gibi yapılar kullanılırken çağrı yığını büyüyebilir. Recursive fonksiyonların her çağrısı çağrı yığınına eklenir ve işlem tamamlandığında çıkarılır. Bu nedenle, çok fazla recursion kullanımı çağrı yığını büyüdüğünden, "stack overflow" hatası oluşabilir.
 Ayrıca, javascript'te "event loop" (etkinlik döngüsü) adı verilen bir mekanizma sayesinde, çağrı yığını büyümeden işlemlerin gerçekleştirilmesini sağlar. Bu mekanizma, işlemlerin gerçekleştirilmesini bekleyen işlemleri sıraya alır ve çağrı yığını boş olduğunda işlemleri gerçekleştirir. Bu sayede, çağrı yığını büyümeden uzun süreli veya yavaş işlemlerin gerçekleştirilmesi sağlanır.
 Sonuç olarak, call stack Javascript'te çalışan fonksiyonlar veya işlemlerin geri izlenmesini ve hata ayıklama işlemlerini kolaylaştıran bir mekanizmadır. Ayrıca, recursion veya uzun süreli işlemlerin gerçekleştirilmesi için etkinlik döngüsü mekanizmasının kullanılması gerekir.
--Heap: JavaScript programlama dillerinde, "Heap" (yığın) bellekte dinamik olarak alınan ve serbest bırakılan verileri depolayan bir alandır. Heap, veri yapılarının oluşturulduğu ve yönetildiği bir alandır. Örneğin, nesneler, diziler veya fonksiyonlar gibi veri yapıları heap bellekte depolanır.
--Stack: JavaScript programlama dillerinde, "Stack" (yığın) fonksiyon çağrılarının veya işlemlerin gerçekleştirildiği yerdir. Stack, LIFO (Son Giren İlk Çıkar) yapısına sahiptir ve her çağrı veya işlem, stack'e eklenir ve tamamlandığında çıkarılır.
--Event Loop: JavaScript programlama dillerinde, "Event Loop" (etkinlik döngüsü) çağrı yığını (stack) büyümeden işlemlerin gerçekleştirilmesini sağlar. Event loop, işlemlerin gerçekleştirilmesini bekleyen işlemleri sıraya alır ve çağrı yığını boş olduğunda işlemleri gerçekleştirir.
--Callback Queue: JavaScript programlama dillerinde, "Callback Queue" (geri çağırma kuyruğu) işlemlerin gerçekleştirilmesini bekleyen geri çağırma fonksiyonlarının sıralandığı yerdir. Callback queue, event loop tarafından kontrol edilir ve çağrı yığını (stack) boş olduğunda geri çağırma fonksiyonları gerçekleştirilir.
+- Heap: JavaScript programlama dillerinde, "Heap" (yığın) bellekte dinamik olarak alınan ve serbest bırakılan verileri depolayan bir alandır. Heap, veri yapılarının oluşturulduğu ve yönetildiği bir alandır. Örneğin, nesneler, diziler veya fonksiyonlar gibi veri yapıları heap bellekte depolanır.
+- Stack: JavaScript programlama dillerinde, "Stack" (yığın) fonksiyon çağrılarının veya işlemlerin gerçekleştirildiği yerdir. Stack, LIFO (Son Giren İlk Çıkar) yapısına sahiptir ve her çağrı veya işlem, stack'e eklenir ve tamamlandığında çıkarılır.
+- Event Loop: JavaScript programlama dillerinde, "Event Loop" (etkinlik döngüsü) çağrı yığını (stack) büyümeden işlemlerin gerçekleştirilmesini sağlar. Event loop, işlemlerin gerçekleştirilmesini bekleyen işlemleri sıraya alır ve çağrı yığını boş olduğunda işlemleri gerçekleştirir.
+- Callback Queue: JavaScript programlama dillerinde, "Callback Queue" (geri çağırma kuyruğu) işlemlerin gerçekleştirilmesini bekleyen geri çağırma fonksiyonlarının sıralandığı yerdir. Callback queue, event loop tarafından kontrol edilir ve çağrı yığını (stack) boş olduğunda geri çağırma fonksiyonları gerçekleştirilir.
 # 15.Data fetching yöntemleri nelerdir.
 JavaScript'te veri çekme yöntemleri arasında aşağıdakiler bulunur:
--XMLHttpRequest (XHR) : Eski bir veri çekme yöntemidir ve XmlHttpRequest nesnesi kullanılarak gerçekleştirilir. Bu nesne, tarayıcının arka ucunda veri çekmek için kullanılır ve AJAX istekleri gerçekleştirmek için kullanılır.
--Fetch API : Fetch API, XMLHttpRequest'in yerini alan modern bir veri çekme yöntemidir. Fetch API, JavaScript kodunuzda veri çekmek için kullanabileceğiniz bir dizi fonksiyon ve metodlar sunar.
--Axios : Axios, bir JavaScript kütüphanesidir ve Fetch API'nin yerini alan bir alternatif olarak kullanılabilir. Axios, daha kullanışlı ve kolay kullanılabilir bir arayüz sunar.
--jQuery : jQuery, JavaScript kütüphanesidir ve veri çekme işlemleri için kullanılabilir. jQuery, XMLHttpRequest veya Fetch API gibi alternatif yöntemlere göre daha kullanışlı ve kolay kullanılabilir bir arayüz sunar.
+- XMLHttpRequest (XHR) : Eski bir veri çekme yöntemidir ve XmlHttpRequest nesnesi kullanılarak gerçekleştirilir. Bu nesne, tarayıcının arka ucunda veri çekmek için kullanılır ve AJAX istekleri gerçekleştirmek için kullanılır.
+- Fetch API : Fetch API, XMLHttpRequest'in yerini alan modern bir veri çekme yöntemidir. Fetch API, JavaScript kodunuzda veri çekmek için kullanabileceğiniz bir dizi fonksiyon ve metodlar sunar.
+- Axios : Axios, bir JavaScript kütüphanesidir ve Fetch API'nin yerini alan bir alternatif olarak kullanılabilir. Axios, daha kullanışlı ve kolay kullanılabilir bir arayüz sunar.
+- jQuery : jQuery, JavaScript kütüphanesidir ve veri çekme işlemleri için kullanılabilir. jQuery, XMLHttpRequest veya Fetch API gibi alternatif yöntemlere göre daha kullanışlı ve kolay kullanılabilir bir arayüz sunar.
 # 16.Bir fonksiyonu düzenli aralıklarla çalıştırmamızı sağlayan fonksiyonun adı nedir ? 
 JavaScript'te bir fonksiyonu düzenli aralıklarla çalıştırmak için kullanabileceğiniz fonksiyon "setInterval()" dir. setInterval() fonksiyonu, belirtilen aralıkta belirtilen fonksiyonu tekrar tekrar çağırır. Örneğin, bir fonksiyonu her 5 saniyede bir çalıştırmak için setInterval() kullanabilirsiniz.
 
@@ -105,9 +105,9 @@ console.log(person1.age);
 Bu örnekte, "Person" sınıfının yapıcı fonksiyonu, "name" ve "age" adlı iki özellik alır ve bunları nesnenin özellikleri olarak atar. Bu nesne oluşturulduğunda, yapıcı fonksiyon otomatik olarak çalışır ve nesnenin "name" ve "age" özellikleri atanır.
 
 # 19. Call,apply,bind kavramlarını açıklayınız
-call()" metodu, bir fonksiyonu çağırmak için kullanılır ve ilk parametre olarak "this" değişkeninin değerini, diğer parametreler ise fonksiyonun gerçek parametrelerini alır.
-apply()" metodu, "call()" metoduna benzer şekilde çalışır ancak fonksiyon parametrelerini dizi olarak alır.
-bind()" metodu, bir fonksiyonu "this" değişkeninin değerini ve parametrelerini belirli bir değerle bağlamak için kullanılır. Bu metod, fonksiyonu çağırmaz ancak oluşan yeni fonksiyonu döndürür.
+- call()" metodu, bir fonksiyonu çağırmak için kullanılır ve ilk parametre olarak "this" değişkeninin değerini, diğer parametreler ise fonksiyonun gerçek parametrelerini alır.
+- apply()" metodu, "call()" metoduna benzer şekilde çalışır ancak fonksiyon parametrelerini dizi olarak alır.
+- bind()" metodu, bir fonksiyonu "this" değişkeninin değerini ve parametrelerini belirli bir değerle bağlamak için kullanılır. Bu metod, fonksiyonu çağırmaz ancak oluşan yeni fonksiyonu döndürür.
 # 20.Babel nedir kullanmanın bize avantajları nelerdir ?
 Babel, kodunuzu transpile ederken, JavaScript kodunuzu modern JavaScript özelliklerine dönüştürerek, tarayıcılar veya platformlar tarafından desteklenen daha eski JavaScript sürümlerine çevirebilir. Örneğin, ECMAScript 6 class'larını ve arrow functionlarını, ECMAScript 5'e dönüştürerek daha eski tarayıcılar veya platformlar tarafından desteklenen kod üretebilir. Ayrıca, Babel, kodunuzda kullandığınız özellikleri, desteklenmeyen tarayıcılar için polyfill (örnek kodlar) ile değiştirerek uyumlu hale getirebilir.
 
@@ -118,8 +118,8 @@ Babel, kodunuzu transpile ederken, JavaScript kodunuzu modern JavaScript özelli
 Document Object Model" (DOM), web sayfasının yapısını ve içeriğini programatik olarak değiştirmek için kullanılan bir API'dir. DOM, HTML veya XML belgelerini, bir ağaç yapısına dönüştürerek, belgenin elemanlarına veya özelliklerine programatik olarak erişmenizi sağlar. Örneğin, JavaScript kodunuzda bir HTML etiketine erişmek veya bir özellik değiştirmek için DOM kullanabilirsiniz.
 "Virtual DOM" ise, JavaScript kodunuzda DOM'u yansıtmak için kullanılan bir veri yapısıdır. Virtual DOM, gerçek DOM'un yapısını ve içeriğini yansıtmak için kullanılır ve gerçek DOM ile senkronize edilir. Virtual DOM sayesinde, gerçek DOM'da yapılan değişiklikleri önceden simüle edebilir ve gerçek DOM'a yansıtmadan önce optimize edebilirsiniz.
 # 22.prop ve component kavramlarını açıklayın
-"Prop" (properties), React komponentleri arasında veri aktarımını sağlamak için kullanılan bir kavramdır. Bir React komponentine veri aktarmanız için, o komponentin "prop" olarak tanımladığı değişkenlere değer atayabilirsiniz. Örneğin, bir "Ad" ve "Soyad" prop'larına sahip bir "Kullanıc" komponenti oluşturabilirsiniz ve bu prop'ları "Kullanıc" komponenti içinde kullanabilirsiniz.
-"Component" ise, React'te kullanılan bir kavramdır. React uygulamaları, birkaç düzeyde bileşenlerden oluşur. Her bileşen, bir parçası oluşturduğu daha büyük bir bileşenin içeriğidir. React bileşenleri, HTML veya JSX kodu içerebilir ve veri işleme, birleştirme veya görüntüleme işlemlerini gerçekleştirebilir. React bileşenleri, fonksiyonel veya sınıf tabanlı olabilir. Bir React bileşeni, kendi içinde diğer bileşenleri içerebilir veya diğer bileşenler tarafından çağrılabilir. Bu yapı sayesinde, uygulamanızı daha küçük parçalara bölerek, okunaklı ve maintainable yapabilirsiniz.
+- "Prop" (properties), React komponentleri arasında veri aktarımını sağlamak için kullanılan bir kavramdır. Bir React komponentine veri aktarmanız için, o komponentin "prop" olarak tanımladığı değişkenlere değer atayabilirsiniz. Örneğin, bir "Ad" ve "Soyad" prop'larına sahip bir "Kullanıc" komponenti oluşturabilirsiniz ve bu prop'ları "Kullanıc" komponenti içinde kullanabilirsiniz.
+- "Component" ise, React'te kullanılan bir kavramdır. React uygulamaları, birkaç düzeyde bileşenlerden oluşur. Her bileşen, bir parçası oluşturduğu daha büyük bir bileşenin içeriğidir. React bileşenleri, HTML veya JSX kodu içerebilir ve veri işleme, birleştirme veya görüntüleme işlemlerini gerçekleştirebilir. React bileşenleri, fonksiyonel veya sınıf tabanlı olabilir. Bir React bileşeni, kendi içinde diğer bileşenleri içerebilir veya diğer bileşenler tarafından çağrılabilir. Bu yapı sayesinde, uygulamanızı daha küçük parçalara bölerek, okunaklı ve maintainable yapabilirsiniz.
 React bileşenleri, props ve state değişkenleri aracılığıyla veri alabilir ve bu verileri içeriğinde kullanabilir. Props, bileşenin dışarıdan veri almasını sağlar ve değiştirilemez. State ise bileşenin kendi içinde tuttuğu değişkenlerdir ve bileşenin içeriğini etkileyebilir. State değişkenleri bileşen tarafından yönetilir ve bileşen içinde değiştirilebilir.
 # 23.React Prop Drilling nedir ?
 "Prop drilling" (prop tunneling), React uygulamalarında veri aktarımı için kullanılan bir kavramdır. Bu terim, verinin uygulamanın farklı katmanları arasında geçerek, tüm bileşenler arasında verinin prop olarak aktarılmasını ifade eder. Örneğin, bir verinin uygulamanın en üst seviyesinde oluşturulduğu ve tüm alt seviyedeki bileşenlere prop olarak aktarılmasını ifade eder.
@@ -140,11 +140,11 @@ Sonuç olarak, iki yöntem arasında performans açısından fonksiyonal compone
 
 # 26.React Lifecylce metodları nelerdir.
 React bileşenleri, bileşenin oluşturulduğu, güncellendiği veya silindiği zaman çağrılabilen lifecycle metodlarına sahiptir. Bu metodlar aracılığıyla bileşenin içeriği veya props/state değişkenleri güncellenebilir.React bileşenlerinin lifecycle metodları şunlardır:
-componentDidMount(): Bileşen oluşturulduğu ve ilk kez DOM'a eklendiği zaman çağrılır. Bu metod, bileşenin ilk görüntülenmesi için gerekli olan veri veya işlemleri yapmak için kullanılabilir.
-componentDidUpdate(): Bileşenin props veya state değişkenleri güncellendiği zaman çağrılır. Bu metod, bileşenin güncellenen verilerle yeniden render edilmesi için gerekli olan işlemleri yapmak için kullanılabilir.
-componentWillUnmount(): Bileşen DOM'dan silindiği zaman çağrılır. Bu metod, bileşenin silinmesi sonrası gerekli olan işlemleri yapmak için kullanılabilir.
-shouldComponentUpdate(): Bileşenin props veya state değişkenleri güncellendiği zaman çağrılır. Bu metod, bileşenin render edilip edilmeyeceğini belirlemek için kullanılabilir.
-getDerivedStateFromProps(): Bileşenin props değişkenleri güncellendiği zaman çağrılır. Bu metod, bileşenin state değişkenlerini güncellemek için kullanılabilir.
+- componentDidMount(): Bileşen oluşturulduğu ve ilk kez DOM'a eklendiği zaman çağrılır. Bu metod, bileşenin ilk görüntülenmesi için gerekli olan veri veya işlemleri yapmak için kullanılabilir.
+- componentDidUpdate(): Bileşenin props veya state değişkenleri güncellendiği zaman çağrılır. Bu metod, bileşenin güncellenen verilerle yeniden render edilmesi için gerekli olan işlemleri yapmak için kullanılabilir.
+- componentWillUnmount(): Bileşen DOM'dan silindiği zaman çağrılır. Bu metod, bileşenin silinmesi sonrası gerekli olan işlemleri yapmak için kullanılabilir.
+- shouldComponentUpdate(): Bileşenin props veya state değişkenleri güncellendiği zaman çağrılır. Bu metod, bileşenin render edilip edilmeyeceğini belirlemek için kullanılabilir.
+- getDerivedStateFromProps(): Bileşenin props değişkenleri güncellendiği zaman çağrılır. Bu metod, bileşenin state değişkenlerini güncellemek için kullanılabilir.
 Lifecycle metodları, sadece sınıf tabanlı componentlerde kullanılabilir.
 
 
@@ -156,13 +156,13 @@ Bu sayede React bileşenleri, DOM eventleri ile aynı şekilde çalışır ve sa
 
 # 28. Build almak ne anlama gelir, build işlemi esnasında neler olur.
 "Build" işlemi, bir yazılım projesinin üretim veya dağıtım için hazır hale getirilmesi anlamına gelir. Bu işlem, kaynak kodların derlenmesi, bağımlılıkların eklenmesi, dosya boyutlarının azaltılması ve diğer işlemlerin gerçekleştirilmesi olarak tanımlanabilir.
--Build işlemi esnasında genellikle şunlar gerçekleşir:
--Kaynak kodlar derlenir, transpile edilir ve minify edilir
--Bağımlılıklar yönetilir, gerekli paketler yüklenir ve projede kullanılan bağımlılıkların güncellenmesi sağlanır.
--Dosya boyutları azaltılır, gereksiz dosyalar silinir ve dosya adları optimize edilir
--Proje ayarları ve config dosyaları kontrol edilir ve güncellenir
--Testler çalıştırılır ve sonuçlar rapor edilir
--Proje üretim veya test ortamına deploy edilir.
+- Build işlemi esnasında genellikle şunlar gerçekleşir:
+- Kaynak kodlar derlenir, transpile edilir ve minify edilir
+- Bağımlılıklar yönetilir, gerekli paketler yüklenir ve projede kullanılan bağımlılıkların güncellenmesi sağlanır.
+- Dosya boyutları azaltılır, gereksiz dosyalar silinir ve dosya adları optimize edilir
+- Proje ayarları ve config dosyaları kontrol edilir ve güncellenir
+- Testler çalıştırılır ve sonuçlar rapor edilir
+- Proje üretim veya test ortamına deploy edilir.
 Bu işlemlerin amacı, projeyi üretim veya dağıtım için hazır hale getirmektir. Bu sayede projede oluşan hatalar veya sorunlar önceden tespit edilir ve çözülür. Aynı zamanda proje daha hızlı ve daha az kaynak tüketen hale getirilir.
 
 # 29.Webpack Nedir ?
@@ -183,15 +183,15 @@ Bu Hooklar sayesinde, React bileşenlerinin performansı arttırılır ve bileş
 
 #31.State Menagement yöntemleri nelerdir ?
 React uygulamalarında state yönetimi, uygulamanın veri durumunun nasıl tutulacağını ve nasıl yönetileceğini belirler. State management yöntemleri arasında en yaygın olanlar şunlardır:
-Local state: Her bileşenin kendi içinde yer alan state'i yönetir. Bu yöntem, uygulamanın küçük ve basit olması durumunda kullanılabilir. Ancak, uygulama büyüdükçe, state yönetimi zorlaşabilir.
-Context API: React'in kendi içinde yer alan bir yöntemdir. Bu yöntem, state'i kapsayan bir context oluşturulur ve bileşenler bu context'e bağlanır. Bu sayede, state'i yönetmek isteyen bileşenler context'e erişebilir. Bu yöntem, uygulama boyutu büyüdükçe daha pratik hale gelir.
-Redux: React uygulamaları için popüler bir state management kütüphanesidir. Bu kütüphane, state'i tek bir noktada (store) yönetir ve bileşenler bu store'a erişir. Bu yöntem, uygulamanın büyüklüğünden bağımsız olarak kullanılabilir. Ancak, kurulumu ve kullanımı biraz daha zahmetli olabilir.
-MobX: MobX, Redux ile benzer bir şekilde çalışır. Bu kütüphane de state'i tek bir noktada yönetir ve bileşenler bu state'e erişir. MobX, Redux'a göre daha az kurulum gerektirir ve kullanımı daha kolaydır.
+- Local state: Her bileşenin kendi içinde yer alan state'i yönetir. Bu yöntem, uygulamanın küçük ve basit olması durumunda kullanılabilir. Ancak, uygulama büyüdükçe, state yönetimi zorlaşabilir.
+- Context API: React'in kendi içinde yer alan bir yöntemdir. Bu yöntem, state'i kapsayan bir context oluşturulur ve bileşenler bu context'e bağlanır. Bu sayede, state'i yönetmek isteyen bileşenler context'e erişebilir. Bu yöntem, uygulama boyutu büyüdükçe daha pratik hale gelir.
+- Redux: React uygulamaları için popüler bir state management kütüphanesidir. Bu kütüphane, state'i tek bir noktada (store) yönetir ve bileşenler bu store'a erişir. Bu yöntem, uygulamanın büyüklüğünden bağımsız olarak kullanılabilir. Ancak, kurulumu ve kullanımı biraz daha zahmetli olabilir.
+- MobX: MobX, Redux ile benzer bir şekilde çalışır. Bu kütüphane de state'i tek bir noktada yönetir ve bileşenler bu state'e erişir. MobX, Redux'a göre daha az kurulum gerektirir ve kullanımı daha kolaydır.
 Bu yöntemler arasında kullanılacak olanı, uygulamanın boyutu, ihtiyaçları ve geliştiricinin tercihi gibi faktörlere göre seçilir.
 
 # 32.Context API ve Redux Nedir,Farkları Nelerdir ?
-Context API: React'in kendi içinde yer alan bir yöntemdir. Bu yöntem, state'i kapsayan bir context oluşturulur ve bileşenler bu context'e bağlanır. Bu sayede, state'i yönetmek isteyen bileşenler context'e erişebilir. Bu yöntem, uygulama boyutu büyüdükçe daha pratik hale gelir.
-Redux: React uygulamaları için popüler bir state management kütüphanesidir. Bu kütüphane, state'i tek bir noktada (store) yönetir ve bileşenler bu store'a erişir. Redux, state'i tek bir yerde yönetir ve bileşenlerin state'e erişimini kontrol eder. Ayrıca, state'in geçmişini kaydetme ve geri dönme özellikleri de sağlar.
+- Context API: React'in kendi içinde yer alan bir yöntemdir. Bu yöntem, state'i kapsayan bir context oluşturulur ve bileşenler bu context'e bağlanır. Bu sayede, state'i yönetmek isteyen bileşenler context'e erişebilir. Bu yöntem, uygulama boyutu büyüdükçe daha pratik hale gelir.
+- Redux: React uygulamaları için popüler bir state management kütüphanesidir. Bu kütüphane, state'i tek bir noktada (store) yönetir ve bileşenler bu store'a erişir. Redux, state'i tek bir yerde yönetir ve bileşenlerin state'e erişimini kontrol eder. Ayrıca, state'in geçmişini kaydetme ve geri dönme özellikleri de sağlar.
 Context API, Redux'a göre daha az kurulum gerektirir ve kullanımı daha kolaydır. Ancak Redux daha esnek ve scalabilirdir ve kodun anlaşılmasını ve debuggability'i kolaylaştırır. Redux, özellikle uygulamanın büyüklüğü ve karmaşıklığı arttıkça daha yararlı olabilir.
 
 
@@ -199,9 +199,9 @@ Context API, Redux'a göre daha az kurulum gerektirir ve kullanımı daha kolayd
 
 # 33. SSR,CSR,SSG kavramlarını açıklayın ?
 
-SSR (Server-Side Rendering): Bu yöntem, uygulamanın sunucuda render edilmesini sağlar. Bu sayede, tarayıcıda uygulama ilk yüklendiğinde hızlı bir şekilde gösterilir. SSR, SEO'yu arttırmak ve tarayıcıda ilk yüklenmenin hızını arttırmak için kullanılır.
-CSR (Client-Side Rendering): Bu yöntem, uygulamanın tarayıcıda render edilmesini sağlar. Bu sayede, tarayıcıda uygulama ilk yüklendiğinde yavaş bir şekilde gösterilir. Ancak, daha sonra uygulamanın hızı arttır.
-SSG (Static Site Generation): Bu yöntem uygulamanın statik olarak üretilmesini sağlar. Bu sayede, uygulamanın hızı arttırılır ve SEO'yu arttırmak için kullanılır. Bu yöntem, özellikle blog veya haber siteleri gibi statik içerikli siteler için idealdir.
+- SSR (Server-Side Rendering): Bu yöntem, uygulamanın sunucuda render edilmesini sağlar. Bu sayede, tarayıcıda uygulama ilk yüklendiğinde hızlı bir şekilde gösterilir. SSR, SEO'yu arttırmak ve tarayıcıda ilk yüklenmenin hızını arttırmak için kullanılır.
+- CSR (Client-Side Rendering): Bu yöntem, uygulamanın tarayıcıda render edilmesini sağlar. Bu sayede, tarayıcıda uygulama ilk yüklendiğinde yavaş bir şekilde gösterilir. Ancak, daha sonra uygulamanın hızı arttır.
+- SSG (Static Site Generation): Bu yöntem uygulamanın statik olarak üretilmesini sağlar. Bu sayede, uygulamanın hızı arttırılır ve SEO'yu arttırmak için kullanılır. Bu yöntem, özellikle blog veya haber siteleri gibi statik içerikli siteler için idealdir.
 Bu kavramlar arasında farkları, uygulamanın nasıl yüklenir ve nasıl gösterilir. SSR ile sunucuda render edilir ve hızlı yüklenir, ancak daha büyük sunucu ihtiyacı vardır. CSR ise tarayıcıda render edilir ve daha sonra hızlı yüklenir, ancak ilk yükleme yavaş olabilir. SSG ise statik olarak üretilir ve hızlı yüklenir, ancak sadece statik içerikli siteler için kullanılabilir.
 
 
